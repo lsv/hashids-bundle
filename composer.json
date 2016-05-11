@@ -1,0 +1,19 @@
+{
+  "name": "lsv/hashidsbundle",
+  "description": "Symfony bundle for integration of hashids lib to the container",
+  "keywords": [
+    "hashids"
+  ],
+  "type": "symfony-bundle",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "require": {
+    "hashids/hashids": "^1.0",
+    "symfony/http-kernel": "^2.7|^3.0",
+    "symfony/config": "^2.7|^3.0",
+    "symfony/dependency-injection": "^2.7|^3.0"
+  },
+  "require-dev": {
+    "symfony/twig-bridge": "^2.7|^3.0"
+  }
+}

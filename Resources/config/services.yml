@@ -1,0 +1,18 @@
+parameters:
+    lsv_hashids.class: 'Hashids\Hashids'
+    lsv_hashids.twig.class: 'Lsv\HashidsBundle\Twig\TwigExtension'
+
+services:
+    lsv_hashids:
+        class: "%lsv_hashids.class%"
+        arguments: ["%lsv_hashids.salt%", "%lsv_hashids.length%", "%lsv_hashids.alphabet%"]
+        public: true
+        lazy: true
+
+    lsv_hashids.twig:
+        class: "%lsv_hashids.twig.class%"
+        arguments: ["%lsv_hashids%"]
+        tags:
+            - { name: twig.extension }
+        public: false
+        lazy: true
