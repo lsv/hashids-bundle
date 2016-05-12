@@ -29,9 +29,5 @@ class LsvHashidsExtension extends Extension
         $container->setParameter('lsv_hashids.length', $config['length']);
         $container->setParameter('lsv_hashids.alphabet', $config['alphabet']);
 
-        if ($container->has('twig')) {
-            
-        }
-
     }
 }
