@@ -11,7 +11,7 @@ services:
 
     lsv_hashids.twig:
         class: "%lsv_hashids.twig.class%"
-        arguments: ["%lsv_hashids%"]
+        arguments: ["@lsv_hashids"]
         tags:
             - { name: twig.extension }
         public: false
