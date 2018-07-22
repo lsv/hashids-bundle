@@ -28,7 +28,7 @@ public function registerBundles()
 {
     $bundles = array(
         // ...
-        new lsv\HashidsBundle\LsvHashidsBundle(),
+        new \Lsv\HashidsBundle\LsvHashidsBundle(),
     );
 }
 ```
@@ -44,7 +44,7 @@ lsv_hashids:
     # Length is default 8
     length: 8
     # Alphabet is default "abcdefghij1234567890" - Default in hashids
-    alphanet: "abcdefghij1234567890"
+    alphabet: "abcdefghij1234567890"
 ```
 
 ### Usage
